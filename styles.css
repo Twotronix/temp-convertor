@@ -1,8 +1,19 @@
-:root {
+.normal {
     --bgCol: hsl(0, 0%, 0%);
     --cardCol: linear-gradient(180deg, hsl(0, 2%, 8%), hsl(0, 0%, 4%));
     --buttonCol: hsl(0, 0%, 5%);
     --buttonHov: hsl(0, 0%, 10%);
+    --textColTitle: hsl(0, 0%, 95%);
+    --textColAccent: hsl(0, 0%, 80%);
+    --borderCol: hsla(0, 0%, 95%, 30%);
+    --font-family: -apple-system, BlinkMacSystemFont, "segoe ui";
+
+}
+.secondary {
+    --bgCol: hsl(250, 100%, 5%);
+    --cardCol: linear-gradient(180deg, hsl(250, 100%, 8%), hsl(250, 100%, 4%));
+    --buttonCol: hsl(250, 100%, 10%);
+    --buttonHov: hsl(250, 100%, 15%);
     --textColTitle: hsl(0, 0%, 95%);
     --textColAccent: hsl(0, 0%, 80%);
     --borderCol: hsla(0, 0%, 95%, 30%);
@@ -12,11 +23,13 @@
 }
 
 
+
 body {
     display: grid;
     place-items: center;
     min-height: 100vh;
-    background-color: var(--bgCol); 
+    background-color: var(--bgCol);
+    transition: background-color 0.3s ease;
 
 }
 
@@ -30,7 +43,7 @@ body {
     border: solid;
     border-width: 1px;
     border-color: var(--borderCol);
-    transition: padding 0.3s ease;
+    transition: padding 0.3s ease, background-color 0.3s ease;;
 
 }
 
@@ -76,6 +89,7 @@ input {
     background-color: var(--buttonCol);
     align-self: stretch;
     margin: 0.2em 1em;
+    transition: background-color 0.3s ease;
 }
 
 h1, h3{
@@ -95,4 +109,20 @@ h2 {
 .inputs {
     display: flex;
     flex-direction: row;
+}
+
+@media (min-width: 768px) {
+    .frameMain {
+    background-image: var(--cardCol);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    border-radius: 1em;
+    border: solid;
+    border-width: 1px;
+    border-color: var(--borderCol);
+    transition: padding 0.3s ease, background-color 0.3s ease;
+    min-width: 40em;
+    }
 }
