@@ -43,7 +43,8 @@ body {
     border: solid;
     border-width: 1px;
     border-color: var(--borderCol);
-    transition: padding 0.3s ease, background-color 0.3s ease;;
+    transition: padding 0.3s ease, background-color 0.3s ease;
+    max-width: 20em;
 
 }
 
@@ -65,8 +66,9 @@ button {
     border-width: 1px;
     border-color: var(--borderCol);
     color: var(--textColAccent);
-    min-width: 20em;
+    min-width: 0em;
     align-self: stretch;
+    max-width: 40em;
     
 }
 button:hover {
@@ -97,6 +99,7 @@ h1, h3{
     color: var(--textColTitle);
     font-family: var(--font-family);
     font-weight: normal;
+    text-align: center;
 }
 h2 {
     font-family: var(--mainFont);
@@ -113,16 +116,52 @@ h2 {
 
 @media (min-width: 768px) {
     .frameMain {
-    background-image: var(--cardCol);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1em;
-    border-radius: 1em;
-    border: solid;
-    border-width: 1px;
-    border-color: var(--borderCol);
-    transition: padding 0.3s ease, background-color 0.3s ease;
-    min-width: 40em;
+        background-image: var(--cardCol);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+        border-radius: 1em;
+        border: solid;
+        border-width: 1px;
+        border-color: var(--borderCol);
+        transition: padding 0.3s ease, background-color 0.3s ease;
+        min-width: 40em;
     }
+    
+    button {
+        background-color: var(--buttonCol);
+        outline: none;
+        border: none;
+        margin: 1em;
+        padding: 0.5em;
+        font-family: var(--font-family);
+        font-size: 1.2rem;
+        border-radius: 0.8em;
+        transition: background-color 0.3s ease, border-radius 0.3s ease;
+        border: solid;
+        border-width: 1px;
+        border-color: var(--borderCol);
+        color: var(--textColAccent);
+        min-width: 20em;
+
+    }
+    
+    input {
+        text-align: center;
+        background-color: white;
+        border: none;
+        font-size: 1.2rem;
+        padding: 0.5em;
+        border-radius: 0.8em;
+        outline: none;
+        border: solid;
+        border-width: 1px;
+        border-color: var(--borderCol);
+        color: var(--textColAccent);
+        background-color: var(--buttonCol);
+        align-self: stretch;
+        margin: 0.2em 1em;
+        transition: background-color 0.3s ease;
+}
 }
