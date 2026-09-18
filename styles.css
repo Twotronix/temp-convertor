@@ -52,7 +52,7 @@ body {
     padding: 1.4em;
 }
 
-button {
+button, select {
     background-color: var(--buttonCol);
     outline: none;
     border: none;
@@ -68,7 +68,7 @@ button {
     color: var(--textColAccent);
     min-width: 0em;
     align-self: stretch;
-    max-width: 40em;
+    max-width: 40em; 
     
 }
 button:hover {
@@ -163,5 +163,14 @@ h2 {
         align-self: stretch;
         margin: 0.2em 1em;
         transition: background-color 0.3s ease;
+    }
+    .dropdowns {
+        display: flex;
+        align-items: center
+    }
+    select {
+        text-align: center;
+        min-width: 14.2em;
+    }
 }
-}
+
