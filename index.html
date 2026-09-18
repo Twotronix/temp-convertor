@@ -9,7 +9,17 @@
 <body>
     <div class="frameMain">
         <h1 id="title">Temperature Converter</h1>
-        <button id="switch">Switch Units</button>
+        <div class="dropdowns">
+            <select id="dropdown1">
+                <option value="c">°C</option>
+                <option value="f">°F</option>
+            </select>
+            <h3>To</h3>
+            <select id="dropdown2">
+                <option value="f">°F</option>
+                <option value="c">°C</option>
+            </select>
+        </div>
         <input placeholder="Enter Temperature" id="inputField">
         <button id="convertBtn">Convert</button>
         <h2 id="preview"></h2>
