@@ -3,7 +3,7 @@ const convertBtn = document.querySelector("#convertBtn")
 const outputField = document.querySelector("#preview")
 const drp1 = document.querySelector("#dropdown1")
 const drp2 = document.querySelector("#dropdown2")
-document.body.classList.toggle("normal")
+document.body.classList.toggle("celcius")
 
 function updateTemp() {
     const drp1Val = drp1.value

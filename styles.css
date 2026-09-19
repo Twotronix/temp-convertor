@@ -1,4 +1,4 @@
-.normal {
+.celcius {
     --bgCol: hsl(0, 0%, 0%);
     --cardCol: linear-gradient(180deg, hsl(0, 2%, 8%), hsl(0, 0%, 4%));
     --buttonCol: hsl(0, 0%, 5%);
@@ -9,7 +9,7 @@
     --font-family: -apple-system, BlinkMacSystemFont, "segoe ui";
 
 }
-.secondary {
+.fahrenheit {
     --bgCol: hsl(250, 100%, 5%);
     --cardCol: linear-gradient(180deg, hsl(250, 100%, 8%), hsl(250, 100%, 4%));
     --buttonCol: hsl(250, 100%, 10%);
@@ -18,8 +18,26 @@
     --textColAccent: hsl(0, 0%, 80%);
     --borderCol: hsla(0, 0%, 95%, 30%);
     --font-family: -apple-system, BlinkMacSystemFont, "segoe ui";
-    --text: "Dark Theme";
-    --type: "Type: Dark"
+}
+.rankine {
+    --bgCol: hsl(25, 100%, 5%);
+    --cardCol: linear-gradient(180deg, hsl(25, 100%, 8%), hsl(25, 100%, 4%));
+    --buttonCol: hsl(25, 100%, 10%);
+    --buttonHov: hsl(25, 100%, 15%);
+    --textColTitle: hsl(0, 0%, 95%);
+    --textColAccent: hsl(0, 0%, 80%);
+    --borderCol: hsla(0, 0%, 95%, 30%);
+    --font-family: -apple-system, BlinkMacSystemFont, "segoe ui";
+}
+.kelvin {
+    --bgCol: hsl(120, 100%, 5%);
+    --cardCol: linear-gradient(180deg, hsl(120, 100%, 8%), hsl(120, 100%, 4%));
+    --buttonCol: hsl(120, 100%, 10%);
+    --buttonHov: hsl(120, 100%, 15%);
+    --textColTitle: hsl(0, 0%, 95%);
+    --textColAccent: hsl(0, 0%, 80%);
+    --borderCol: hsla(0, 0%, 95%, 30%);
+    --font-family: -apple-system, BlinkMacSystemFont, "segoe ui";
 }
 
 
