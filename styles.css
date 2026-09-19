@@ -114,6 +114,17 @@ h2 {
     flex-direction: row;
 }
 
+    
+.dropdowns {
+    display: flex;
+    align-items: center
+    
+}
+select {
+    text-align: center;
+    min-width: 5.9em;
+}
+
 @media (min-width: 768px) {
     .frameMain {
         background-image: var(--cardCol);
